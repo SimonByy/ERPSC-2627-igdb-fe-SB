@@ -1,0 +1,32 @@
+{
+  "generationParameters": {
+    "generationDate": "Tue Nov 03 2026 15:22:35 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "OData URL",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/odata/v4/game/",
+    "appName": "students",
+    "appTitle": "Students & favorite games",
+    "appDescription": "application to view favorite games",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.154.0",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.34.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "Student"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "to_favos"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
