@@ -93,11 +93,6 @@
           "pattern": "Student({key}):?query:",
           "name": "StudentObjectPage",
           "target": "StudentObjectPage"
-        },
-        {
-          "pattern": "Student({key})/to_favos({key2}):?query:",
-          "name": "FavoriteGameObjectPage",
-          "target": "FavoriteGameObjectPage"
         }
       ],
       "targets": {
@@ -126,7 +121,7 @@
             }
           }
         },
-        "StudentObjectPage": {
+                "StudentObjectPage": {
           "type": "Component",
           "id": "StudentObjectPage",
           "name": "sap.fe.templates.ObjectPage",
@@ -134,29 +129,22 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/Student",
-              "navigation": {
-                "to_favos": {
-                  "detail": {
-                    "route": "FavoriteGameObjectPage"
+              "navigation": {},
+              "controlConfiguration": {
+                "to_favos/@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable",
+                    "creationMode": {
+                      "name": "CreationDialog",
+                      "creationFields": "Game_ID"
+                    }
                   }
                 }
               }
             }
           }
-        },
-        "FavoriteGameObjectPage": {
-          "type": "Component",
-          "id": "FavoriteGameObjectPage",
-          "name": "sap.fe.templates.ObjectPage",
-          "options": {
-            "settings": {
-              "editableHeaderContent": false,
-              "contextPath": "/Student/to_favos"
-            }
-          }
         }
-      }
-    }
+      }}
   },
   "sap.fiori": {
     "registrationIds": [],
